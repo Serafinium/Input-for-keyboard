@@ -5,18 +5,23 @@ package ua.com.AndreiiKysylytsia;
  */
 public class View {
 
-    public void createOutput(){
+    static String res[] = new String [10];
 
-        String st0;
-        String st1;
-        String st2;
-        String st3;
-        String st4;
-        String st5;
-        String st6;
-        String st7;
-        String st8;
-        String st9;
+    static {
+        for (int i = 0; i < 10; i++) {
+            res[i] = "";
+        }
+    }
 
+    public static void createOutput(int index, String str){
+       res[index] += str;
+    }
+
+    public static void display() {
+
+
+        for(int i=0; i<res.length; i++) {
+            System.out.println(res[i]);
+        }
     }
 }

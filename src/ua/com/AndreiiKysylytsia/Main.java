@@ -11,11 +11,13 @@ public class Main {
     }
 
     static void init(){
+
         System.out.println("Please input your word: ");
         String str = Logic.readForKeyboard();
        // System.out.println(str);
         Logic.parsingText(str);
 
+        View.display();
     }
 
 }
